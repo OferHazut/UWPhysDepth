@@ -8,7 +8,7 @@ from data import get_uwdb_train_test_data as get_generators
 class UWPDmodel():
     def __init__(self):
         self.lr = 0.0005
-        self.model_path = "."
+        self.model_path = "nyu.h5"
         self.epochs = 20
 
 #    def get_generators(batch_size):

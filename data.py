@@ -16,7 +16,7 @@ def uwdb_resize(img, resolution=480, padding=6):
     from skimage.transform import resize
     return resize(img, (resolution, int(resolution*4/3)), preserve_range=True, mode='reflect', anti_aliasing=True )
 
-def get_uwdb_data(batch_size, uwdb_data_zipfile=r'./shared/data/D5.zip'):
+def get_uwdb_data(batch_size, uwdb_data_zipfile=r'shared/data/D5.zip'):
     data = extract_zip(uwdb_data_zipfile)
     # data = []
     uwdb2_train = pd.read_csv(r'./train_set.csv')

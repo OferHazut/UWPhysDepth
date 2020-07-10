@@ -1,0 +1,4 @@
+shared/
+.vscode/
+__pycache__/
+*.h5
