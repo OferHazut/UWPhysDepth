@@ -45,7 +45,7 @@ def DepthNorm(x, maxDepth):
 class UWDB_BasicRGBSequence(Sequence):
     def __init__(self, data, dataset, batch_size,shape_rgb, shape_depth):
         self.data = data
-        self.dataset = self.dataset.sample(frac = 1,random_state=0)
+        self.dataset = dataset.sample(frac = 1,random_state=0)
         #self.dataset = dataset
         self.batch_size = batch_size
         self.N = len(self.dataset)

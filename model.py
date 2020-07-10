@@ -1,5 +1,6 @@
 import tensorflow as tf
-import tensorflow.keras as keras
+# import tensorflow.keras as keras
+import keras
 from layers import BilinearUpSampling2D
 from keras import backend as K
 from data import get_uwdb_train_test_data as get_generators
@@ -54,7 +55,7 @@ class UWPDmodel():
     
     def get_model(self, model_path):
         custom_objects = {'BilinearUpSampling2D': BilinearUpSampling2D, 'depth_loss_function': self.depth_loss_function}
-        model = tf.keras.models.load_model(model_path, custom_objects=custom_objects)
+        model = keras.models.load_model(model_path, custom_objects=custom_objects)
 
         return model
 
