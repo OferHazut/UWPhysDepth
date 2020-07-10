@@ -28,9 +28,3 @@ sandbox/
 **/*.asv
 matlab/evaluation/evalDeb/RGT_0154_linear_demosaiced.dng
 **/*.icloud
-=======
-shared/
-.vscode/
-__pycache__/
-*.h5
->>>>>>> 75f805212d321428833c2ddc6ea58b9d89627211
